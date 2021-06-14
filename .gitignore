@@ -1,0 +1,6 @@
+# Folders
+logs/
+__pycache__/
+output/*
+.vscode/
+datasets
