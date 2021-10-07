@@ -95,6 +95,8 @@ Either run evaluation after training, or download and test the provided trained 
 
 Note that if output name of the trained model is changed, it must be specified in corresponding `.yaml` config file's line, i.e. replace value in `MODEL: TADAM_MOT17.pth` with expected model file name.
 
+Add `--which_set test` flag to run on test dataset. Note that `--evaluation` should be removed, as no evaluation result is available for test dataset.
+
 Code from `TrackEval` is used for evaluation, and it is set to run on multiple cores (8 cores) by default.
 
 To run an evaluation after obtaining tracking results (with sequences result files), run:
