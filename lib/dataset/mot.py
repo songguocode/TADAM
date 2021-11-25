@@ -254,7 +254,7 @@ class MOTTracking(torch.utils.data.Dataset):
 
         # No GT for test set
         if "test" in self.path:
-            return det_boxes, None, None, None
+            return det_boxes, None, None, None, None
 
         gt_file = os.path.join(os.path.dirname(
             os.path.dirname(img_path)), "gt", "gt.txt")
